@@ -152,7 +152,7 @@ opts = {
   'sho_str': None,
   'sho_page': None,
   'sho_lim': None,
-  'sho_key': 'Pp1oDSiavzKQJSsRgdzuxFJs8PQXzBL9',
+  'sho_key': 'None',
   'cmd': None,
   'user': 'root',
   'pass': 'root',
