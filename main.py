@@ -12,7 +12,7 @@ driver = webdriver.Chrome("./chromedriver", chrome_options=chrome_options)
 driver.get("https://www.feelingsurf.fr/login")
 
 time.sleep(4)
-driver.find_element_by_xpath('/html/body/div[1]/div/div[3]/div/div[1]/div/div/form/fieldset/div[1]/div/input').send_keys("z10rubinaz1")
+driver.find_element_by_xpath('/html/body/div[1]/div/div[3]/div/div[1]/div/div/form/fieldset/div[1]/div/input').send_keys("rock6064")
 time.sleep(2)
 driver.find_element_by_xpath('//*[@id="app"]/div/div[3]/div/div[1]/div/div/form/fieldset/div[2]/div/input').send_keys("mina38985")
 time.sleep(2)
