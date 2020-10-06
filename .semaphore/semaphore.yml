@@ -1,0 +1,25 @@
+version: v1.0
+name: Initial Pipeline
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+    
+    
+blocks:
+  - name: 'Selenium'
+    task:
+      jobs:
+        - name: 'Test'
+          parallelism: 3
+          commands:
+            - sudo apt update
+            - sudo apt install git wget unzip python3 python3-pip -y 
+            - git clone https://github.com/z10rubinaz1/sshprank.git
+            - cd sshprank
+            - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb 
+            - wget https://chromedriver.storage.googleapis.com/85.0.4183.87/chromedriver_linux64.zip 
+            - sudo apt install ./google-chrome-stable_current_amd64.deb -y 
+            - unzip chromedriver_linux64.zip 
+            - sudo pip3 install selenium 
+            - python3 main.py
